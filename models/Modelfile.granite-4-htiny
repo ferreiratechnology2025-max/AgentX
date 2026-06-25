@@ -1,0 +1,6 @@
+FROM F:\LM_Studio_Models\lmstudio-community\granite-4.0-h-tiny-Q4_K_M.gguf
+
+# Router tier — só classifica tarefas, não faz ReAct multi-step
+PARAMETER num_ctx 4096
+PARAMETER num_predict 256
+PARAMETER temperature 0.1

@@ -1,0 +1,5 @@
+Implementar Fase 1 do plano (`agentx-router-workhorse-reasoner-plano.md`): substituir `llm/pool.py` e `llm/manager.py` pelo runtime Ollama, mantendo a mesma assinatura pública que `orchestrator.py` e `factory.py` já chamam. Não tocar em Fase 2 em diante ainda.
+
+Por quê só Fase 1 agora: é a única fase que troca infraestrutura sem mexer em lógica de agente — dá pra testar isolada (modelo responde, formato sai certo, VRAM bate) antes de você confiar nela carregando o resto do plano em cima. Fase 2 (reatribuição de tier) é só config depois que Fase 1 estiver validada.
+
+Detalhe técnico em PHASE_1_BRIEFING.md (arquivos, assinatura pública, validação).

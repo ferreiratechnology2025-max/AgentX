@@ -1,0 +1,11 @@
+root     ::= object
+object   ::= "{" ws "\"thought\":" ws string ws "," ws (action | final) ws "}"
+action   ::= "\"action\":" ws "{" ws "\"name\":" ws string ws "," ws "\"arguments\":" ws flatobj ws "}" ws "," ws "\"final_answer\":" ws null
+final    ::= "\"action\":" ws null ws "," ws "\"final_answer\":" ws string
+flatobj  ::= "{" ws (pair ("," ws pair)*)? ws "}"
+pair     ::= string ws ":" ws value
+value    ::= string | number | "true" | "false" | "null"
+string   ::= "\"" ("\\"? [^"\\])* "\""
+number   ::= "-"? ("0" | [1-9] [0-9]*) ("." [0-9]+)?
+null     ::= "null"
+ws       ::= [ \t\n]*

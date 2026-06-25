@@ -1,0 +1,210 @@
+<!-- skill_id: d5e79b67-7337-428e-8fba-d830b8d677e8 -->
+<!-- extracted_at: 2026-06-24T23:25:06.921174+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-24T23:25:06.921174+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao executar `calculator({'expression': '0.15 * 250'})`, a abordagem correta e garantir o calculo correto da expressao.
+---
+<!-- skill_id: 9ff1f8f7-f5cf-4ea6-accf-b12a5016e5a1 -->
+<!-- extracted_at: 2026-06-24T23:25:06.921174+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-24T23:25:06.921174+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao executar `editor({'file_path': 'factorial.py', 'content': '...' })`, a abordagem correta e garantir que a funcao factorial esteja corretamente definida e incluir comentarios explicando sua logica e parametros.
+---
+<!-- skill_id: eb30c47c-47e2-4cec-a650-1340fe1d6031 -->
+<!-- extracted_at: 2026-06-24T23:25:06.921174+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-24T23:25:06.921174+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao executar `project_manager({'action': 'status', 'filename': 'test_factorial.py'})`, a abordagem correta e verificar o output.
+---
+<!-- skill_id: 400bae76-0ea2-442b-a869-8e8226f953f2 -->
+<!-- extracted_at: 2026-06-24T23:25:06.921174+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-24T23:25:06.921174+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao executar `agent/judge.py`, a abordagem correta e analisar o codigo em busca de vulnerabilidades de seguranca, com foco na validacao de entradas e manipulacao de dados (SQL Injection, Command Injection, Path Traversal, Secrets hardcoded, Deserializacao insegura).
+---
+<!-- skill_id: f873854c-9d2b-469c-93d1-f8726b640880 -->
+<!-- extracted_at: 2026-06-24T23:25:06.921174+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-24T23:25:06.921174+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao executar `project_manager({'action': 'read', 'path': 'agent/judge.py'})`, a abordagem correta e ler o arquivo para analise de vulnerabilidades.
+---
+<!-- skill_id: 50b21c29-1fb4-4059-a9c9-ad4462f7ab3f -->
+<!-- extracted_at: 2026-06-24T23:25:06.921174+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-24T23:25:06.921174+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao executar a analise do codigo `agent/judge.py`, a abordagem correta e utilizar expressoes regulares (regex) para identificar padroes suspeitos, como tentativas de injecao ou manipulacao de entrada.
+---
+<!-- skill_id: cc901cd0-5f50-42ef-a5fb-9de9e171e247 -->
+<!-- extracted_at: 2026-06-24T23:25:06.921174+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-24T23:25:06.921174+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao analisar o codigo, a utilizacao da biblioteca `re` (expressoes regulares) permite identificar e corrigir padroes de sintaxe inconsistentes e potenciais vulnerabilidades.
+---
+<!-- skill_id: cb315db8-9746-4830-8232-6c52456fc87f -->
+<!-- extracted_at: 2026-06-25T19:32:09.633396+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-25T19:32:09.633396+00:00 -->
+<!-- utility_score: 0.5000 -->
+project_manager({'action': 'write', 'path': 'test/test.txt', 'content': 'Hello'})
+---
+<!-- skill_id: 07dc35ab-f752-455d-aea8-429452209af9 -->
+<!-- extracted_at: 2026-06-25T19:42:22.295664+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-25T19:42:22.295664+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao executar `current_datetime`, a abordagem correta é obter a data e hora atuais.
+---
+<!-- skill_id: 42afc8b6-2b04-4cb9-ba9a-bd31efc32cfa -->
+<!-- extracted_at: 2026-06-25T19:56:47.082297+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-25T19:56:47.082297+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao executar `project_manager({'action': 'write', 'path': 'test2.txt', 'content': 'World'})`, a abordagem correta é usar o comando `write` com o parâmetro `content`.
+---
+<!-- skill_id: a0859189-1ee3-4a97-b20f-d82beaf87517 -->
+<!-- extracted_at: 2026-06-25T20:01:18.466417+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-25T20:01:18.466417+00:00 -->
+<!-- utility_score: 0.5000 -->
+```
+project_manager({'action': 'write', 'path': 'src/fibonacci.py', 'content': 'def fibonacci(n):\n  if n <= 1:\n    return n\n  else:\n    return fibonacci(n-1) + fibonacci(n-2)'})
+```
+---
+<!-- skill_id: 76044969-e994-4d61-a765-a40621cbe0dc -->
+<!-- extracted_at: 2026-06-25T20:02:27.688169+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-25T20:02:27.688169+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao criar o arquivo `fibonacci.py`, a abordagem correta foi usar o comando `project_manager({'action': 'write', 'path': 'fibonacci.py', 'content': 'def fibonacci(n):\n  """Calcula o n-ésimo número de Fibonacci recursivamente.\n\n  Args:\n    n: O índice do número de Fibonacci\n  if n <= 1:\n    return n\n  else:\n    return fibonacci(n-1) + fibonacci(n-2)'})`.
+---
+<!-- skill_id: 01571646-642f-427c-9fa3-82d5791702a0 -->
+<!-- extracted_at: 2026-06-25T20:19:02.564703+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-25T20:19:02.564703+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao executar `fibonacci.py`, a abordagem correta é usar recursão para calcular o número de Fibonacci.
+---
+<!-- skill_id: 3d8b525b-f82a-498c-a69e-67b0cb057af4 -->
+<!-- extracted_at: 2026-06-25T20:19:40.594295+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-25T20:19:40.594295+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao executar `project_manager({'action': 'write', 'path': 'fibonacci.py', 'content': 'def fibonacci(n):\n    if n <= 1:\n        return n\n    else:\n        return fibonacci(n-1) + fibonacci(n-2)'})`, a abordagem correta e `write` (comando de escrita no arquivo).
+---
+<!-- skill_id: f9e77dad-5660-4003-87ab-772040c3cebc -->
+<!-- extracted_at: 2026-06-25T20:25:09.757154+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-25T20:25:09.757154+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao executar [contexto], a abordagem correta e [função recursiva para calcular o número de Fibonacci].
+---
+<!-- skill_id: 643e6a56-7ef6-4915-bf03-5abadaf003fd -->
+<!-- extracted_at: 2026-06-25T20:25:45.612566+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-25T20:25:45.612566+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao executar `project_manager({'action': 'read', 'path': 'fibonacci.py'})`, a abordagem correta foi ler o arquivo para verificar a implementação recursiva da função Fibonacci.
+---
+<!-- skill_id: 1ac10987-9603-4997-8fc9-1b30e025d336 -->
+<!-- extracted_at: 2026-06-25T20:27:30.319239+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-25T20:27:30.319239+00:00 -->
+<!-- utility_score: 0.5000 -->
+- Ao executar `project_manager`, a abordagem correta é usar o comando `write` para criar o arquivo `fibonacci.py` com o código da função recursiva de Fibonacci.
+---
+<!-- skill_id: 12d13bd7-7d68-425d-b15e-827d2b57a93e -->
+<!-- extracted_at: 2026-06-25T20:31:59.130538+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-25T20:31:59.130538+00:00 -->
+<!-- utility_score: 0.5000 -->
+```python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+```
+**RECONEXAO TECNICA:** Função recursiva com casos base (n <= 1) e caso recursivo (fibonacci(n-1) + fibonacci(n-2)).
+---
+<!-- skill_id: 711d2f0a-76a6-4164-8abd-2635b376b8d5 -->
+<!-- extracted_at: 2026-06-25T20:32:46.515784+00:00 -->
+<!-- role: general -->
+<!-- usage_count: 0 -->
+<!-- success_count: 0 -->
+<!-- failure_count: 0 -->
+<!-- last_used: 2026-06-25T20:32:46.515784+00:00 -->
+<!-- utility_score: 0.5000 -->
+```python
+def fibonacci(n: int) -> int:
+    """Calcula o n-ésimo número da sequência de Fibonacci recursivamente.
+    Complexidade temporal: O(2^n).  Ineficiente para valores grandes de n.
+    """
+    if n <= 1:
+        return n
+    else:
+        return fibonacci(n-1) + fibonacci(n-2)
+```
+
+**RECONEXAO TECNICA:** A implementação recursiva da função `fibonacci(n)` é mantida conforme o requisito original.  A complexidade temporal
+---

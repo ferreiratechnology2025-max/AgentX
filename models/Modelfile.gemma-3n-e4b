@@ -1,0 +1,6 @@
+FROM F:\LM_Studio_Models\lmstudio-community\gemma-3n-E4B-it-Q4_K_M.gguf
+
+# Workhorse tier — executa sub-tasks, contexto médio
+PARAMETER num_ctx 8192
+PARAMETER num_predict 512
+PARAMETER temperature 0.7

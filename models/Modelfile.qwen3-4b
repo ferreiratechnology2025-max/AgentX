@@ -1,0 +1,6 @@
+FROM F:\LM_Studio_Models\lmstudio-community\Qwen3-4B-Q4_K_M.gguf
+
+# Reasoner tier (Qwen3-4B — disponível; "Qwen 3.5 9B" planejado não encontrado no cache)
+PARAMETER num_ctx 16384
+PARAMETER num_predict 1024
+PARAMETER temperature 0.4

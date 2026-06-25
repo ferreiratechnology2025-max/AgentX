@@ -1,0 +1,13 @@
+FROM ./granite-4.0-h-tiny-Q4_K_M.gguf
+
+TEMPLATE """{{ if .System }}<|start_of_role|>system<|end_of_role|>
+{{ .System }}<|end_of_text|>
+{{ end }}<|start_of_role|>user<|end_of_role|>
+{{ .Prompt }}<|end_of_text|>
+<|start_of_role|>assistant<|end_of_role|>
+{{ .Response }}<|end_of_text|>
+"""
+
+PARAMETER num_ctx 4096
+PARAMETER num_predict 256
+PARAMETER temperature 0.1

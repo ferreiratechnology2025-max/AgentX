@@ -1,0 +1,69 @@
+# AgentX Configuration - Ollama runtime
+# Last updated: 2026-06-24
+
+# === Ollama endpoint ===
+ollama:
+  base_url: "http://localhost:11434"
+
+# === Default LLM (overridden pelo pool) ===
+llm:
+  model_id: "gemma3ne4b"
+
+# === Multi-model pool: três tiers ===
+llm_pool:
+  models:
+    # Router tier — classifica tarefas, roteamento leve
+    - id: "granite4htiny"
+      role_preference: ["routing", "classification"]
+      num_ctx: 4096
+
+    # Workhorse tier — executa sub-tasks e julga por padrão
+    - id: "gemma3ne4b"
+      role_preference: ["general", "coding", "research", "orchestrator",
+                        "judging", "evaluation", "code_review", "security",
+                        "tdd", "planning", "architect"]
+      num_ctx: 12288   # 8192 → 12288: mais steps de ReAct sem estourar contexto.
+
+    # Reasoner tier — síntese complexa e escalada de judge
+    - id: "qwen35-9b"
+      role_preference: ["reasoning"]
+      num_ctx: 16384
+
+  # Auto-unload (descarregamento proativo de modelos ociosos)
+  auto_unload: true
+  auto_unload_timeout: 300  # segundos (5min idle triggers unload)
+
+  # Reasoner timeout: se excedido, fallback ao judge default
+  reasoner_timeout: 30
+
+# === Judge ===
+judge:
+  default_model: "gemma3ne4b"     # workhorse julga por padrão (opção a)
+  escalation_model: "qwen35-9b"   # reasoner para casos críticos
+
+  # Gatilhos de escalada (qualquer um dispara):
+  escalation_needs_revision: 2    # escala quando NEEDS_REVISION acumula >= N na mesma sub-tarefa
+  escalation_score_threshold: 4   # escala quando score <= N (independente da contagem)
+
+  # HITL reformulation: max retries apos rejeicao do operador
+  hitl_retry_attempts: 2
+
+# === Agent ===
+agent:
+  max_steps: 10
+  temperature: 0.7
+  parallel_tools: true
+  yolo_mode: false
+
+# === API server ===
+api:
+  host: "0.0.0.0"
+  port: 8000
+  rate_limit: 100
+
+# === Memory system ===
+memory:
+  max_memories: 500
+  embedding_dim: 384
+  db_path: "data/memoria.db"
+  index_path: "data/memoria.index"
